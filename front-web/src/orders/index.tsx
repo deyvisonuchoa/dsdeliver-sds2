@@ -1,8 +1,11 @@
+import StepsHeader from "./StepsHeader";
 import "./styles.css";
 
-function Order(){
+function Orders(){
     return (
-        <div> teste </div>
+        <div className="orders-container">
+            <StepsHeader />
+        </div>
     )
 }
-export default Order;
+export default Orders;
