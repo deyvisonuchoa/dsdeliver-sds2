@@ -1,4 +1,4 @@
-import { fetchLocalMapBox, fetchProducts } from "../api";
+import { fetchLocalMapBox } from "../api";
 import "./styles.css";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import AssyncSelect from 'react-select/async';
