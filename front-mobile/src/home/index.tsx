@@ -1,17 +1,19 @@
-import { useFonts, OpenSans_400Regular, OpenSans_700Bold } from '@expo-google-fonts/open-sans';
-import AppLoading from 'expo-app-loading';
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
+import Header from '../Header';
 
 export default function Home() {
+    const navigation = useNavigation();
 
     const handleOnPress = () => {
-        alert('Clique funciona');
+        navigation.navigate('Orders');
     }
 
   return (
     <>
+        <Header />
         <View style={styles.container}>
             <Image source={require('../assets/deliveryman.png')} />
             <Text style={styles.title}> Acompanhe os pedidos e {`\n`} entregue no prazo </Text>
